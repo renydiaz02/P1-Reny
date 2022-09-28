@@ -2,14 +2,14 @@ package edu.ucne.p1_reny.data
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
-import edu.ucne.p1_reny.model.Entidad
+import edu.ucne.p1_reny.model.Articulos
 
 @Database(
     entities = [
-        Entidad :: class
+        Articulos :: class
     ],
     exportSchema = false,
-    version = 1
+    version = 2
 )
 abstract class EntidadDb : RoomDatabase (){
 }

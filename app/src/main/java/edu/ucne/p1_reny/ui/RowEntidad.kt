@@ -6,11 +6,11 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import edu.ucne.p1_reny.model.Entidad
+import edu.ucne.p1_reny.model.Articulos
 
 @Composable
 fun RowEntidad(
-    entidad: Entidad
+    articulos: Articulos
 ) {
     Column(
         modifier = Modifier.fillMaxWidth()
@@ -21,8 +21,8 @@ fun RowEntidad(
             ,
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
-            Text(text = entidad.primera)
-            Text(text = entidad.segundo.toString(),
+            Text(text = articulos.primera)
+            Text(text = articulos.segundo.toString(),
                 style = MaterialTheme.typography.h5
             )
         }
@@ -31,7 +31,7 @@ fun RowEntidad(
             modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.Start
         ) {
-            Text(text = entidad.tercera.toString(),
+            Text(text = articulos.tercera.toString(),
                 style = MaterialTheme.typography.caption
             )
         }
