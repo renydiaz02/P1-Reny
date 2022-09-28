@@ -17,6 +17,6 @@ interface ArticulosDao{
     fun buscar (articulos : Int): Flow <Articulos>
 
     @Query("SELECT * FROM Articulos ORDER BY ArticulosID = ArticulosID")
-    fun getlist():Flow <Articulos>
+    fun getlist():Flow <List<Articulos>>
 
 }
