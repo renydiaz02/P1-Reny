@@ -1,4 +1,4 @@
-package edu.ucne.p1_reny
+package edu.ucne.p1_reny.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

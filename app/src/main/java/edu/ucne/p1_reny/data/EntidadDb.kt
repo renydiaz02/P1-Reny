@@ -2,7 +2,7 @@ package edu.ucne.p1_reny.data
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
-import edu.ucne.p1_reny.Entidad
+import edu.ucne.p1_reny.model.Entidad
 
 @Database(
     entities = [

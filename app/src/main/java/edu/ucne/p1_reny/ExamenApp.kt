@@ -1,4 +1,8 @@
 package edu.ucne.p1_reny
 
-class ExamenApp {
+import android.app.Application
+import dagger.hilt.android.HiltAndroidApp
+
+@HiltAndroidApp
+class ExamenApp : Application() {
 }
