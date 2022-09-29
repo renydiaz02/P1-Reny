@@ -9,21 +9,21 @@ import javax.inject.Inject
 
 
 class ArticulosRepository @Inject constructor(
-     val articulosDao: ArticulosDao
+     val db: EntidadDb
 ){
     suspend fun insertar(articulos: Articulos){
-        articulosDao.insertar(articulos = articulos)
+       db. articulosDao.insertar(articulos = articulos)
     }
 
     suspend fun eliminar(articulos: Articulos){
-        articulosDao.eliminar(articulos = articulos)
+        db.articulosDao.eliminar(articulos = articulos)
     }
 
     suspend fun buscar(articulosid: Int): Flow<Articulos> {
-        return articulosDao.buscar(articulosid)
+        return db.articulosDao.buscar(articulosid)
     }
      fun getList() : Flow<List<Articulos>>  {
-         return articulosDao.getlist()
+         return db.articulosDao.getlist()
      }
 
 }
