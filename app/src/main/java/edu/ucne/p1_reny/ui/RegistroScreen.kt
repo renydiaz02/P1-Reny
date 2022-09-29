@@ -85,7 +85,7 @@ fun RegistroScreen(
                 onValueChange = {viewModel.primera = it},
                 modifier = Modifier.fillMaxWidth(),
                 label = {
-                    Text(text = "Primera")
+                    Text(text = "Descripcion")
                 },
                 leadingIcon = {
                     Icon(
@@ -103,7 +103,7 @@ fun RegistroScreen(
                 onValueChange = {viewModel.segunda = it},
                 modifier = Modifier.fillMaxWidth(),
                 label = {
-                    Text(text = "Segunda")
+                    Text(text = "Marca")
                 },
                 leadingIcon = {
                     Icon(
@@ -120,7 +120,7 @@ fun RegistroScreen(
                 onValueChange = {viewModel.tercera = it.toDouble()},
                 modifier = Modifier.fillMaxWidth(),
                 label = {
-                    Text(text = "Monto")
+                    Text(text = "Existencia")
                 },
                 leadingIcon = {
                     Icon(
