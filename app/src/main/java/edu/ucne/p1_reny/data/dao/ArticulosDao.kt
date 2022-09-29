@@ -13,10 +13,10 @@ interface ArticulosDao{
     @Delete
     suspend fun  eliminar(articulos: Articulos)
 
-    @Query("SELECT * FROM Articulos WHERE ArticulosID = ArticulosID")
+    @Query("SELECT * FROM Articulos WHERE ArticulosID = :articulos")
     fun buscar (articulos : Int): Flow <Articulos>
 
-    @Query("SELECT * FROM Articulos ORDER BY ArticulosID = ArticulosID")
+    @Query("SELECT * FROM Articulos ORDER BY ArticulosID")
     fun getlist():Flow <List<Articulos>>
 
 }

@@ -21,8 +21,8 @@ fun RowEntidad(
             ,
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
-            Text(text = articulos.primera)
-            Text(text = articulos.segundo.toString(),
+            Text(text = articulos.Descripcion)
+            Text(text = articulos.Marca.toString(),
                 style = MaterialTheme.typography.h5
             )
         }
@@ -31,7 +31,7 @@ fun RowEntidad(
             modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.Start
         ) {
-            Text(text = articulos.tercera.toString(),
+            Text(text = articulos.Existencia.toString(),
                 style = MaterialTheme.typography.caption
             )
         }
